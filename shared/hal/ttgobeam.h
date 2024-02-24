@@ -33,9 +33,10 @@
 //#define BME680_ADDR BME68X_I2C_ADDR_LOW // !! connect SDIO of BME680 to GND !!
 
 // display (if connected)
-//#define HAS_DISPLAY 1
-#define MY_DISPLAY_SDA SDA
-#define MY_DISPLAY_SCL SCL
+#define HAS_DISPLAY 1
+// Pins for I2C interface of OLED Display
+#define MY_DISPLAY_SDA (21)
+#define MY_DISPLAY_SCL (22)
 #define MY_DISPLAY_RST NOT_A_PIN
 //#define MY_DISPLAY_FLIP  1 // use if display is rotated
 
